@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorLightBackground</item>
+        <item name="colorPrimaryDark">@color/colorDarkPrimary</item>
+        <item name="colorAccent">@color/colorGreen</item>
+        <!--        <item name="android:textColor">@color/colorWhite</item>-->
+        <!--        <item name="android:background">@color/colorLightBackground</item>-->
+        <item name="android:textSize">22dp</item>
+        <item name="android:statusBarColor">@color/colorDarkBackground</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerTheme</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItemStyle</item>
+    </style>
+
+    <style name="DatePickerTheme" parent="android:Theme.Material.Dialog">
+        <item name="android:datePickerStyle">@style/DatePickerStyle</item>
+        <item name="android:textColor">@color/colorPrimaryRed</item>
+        <item name="android:background">@color/colorLightBackground</item>
+    </style>
+
+    <style name="DatePickerStyle" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:headerBackground">@color/colorDarkBackground</item>
+        <item name="android:yearListSelectorColor">@color/colorPrimaryRed</item>
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:padding">24dp</item>
+        <item name="android:yearListItemTextAppearance">@color/colorPrimary</item>
+    </style>
+
+    <style name="SpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:background">@color/colorBackground</item>
+    </style>
+</resources>
